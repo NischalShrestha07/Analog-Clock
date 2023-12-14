@@ -1,0 +1,53 @@
+#clockContainer {
+    /* position: relative helps to make th */
+    position: relative;
+    margin: auto;
+    /* margin:auto helps to make image center */
+    /* border: 2px solid red; */
+    background-color: red;
+    height: 40vw;
+    height: 440px;
+    /* vw=viewport width */
+    width: 40vw;
+    width: 440px;
+    background: url('clock.png')no-repeat;
+    background-size: cover;
+}
+
+/* Lines below is for drawing the time showing hands */
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 12px;
+    transform-origin: bottom;
+    /* transform-origin: bottom helps torotate the clock hand to rotate from the bottom else it will rotate from its center  */
+
+}
+
+#hour {
+    width: 2%;
+    height: 31%;
+    top: 20%;
+    left: 48.88%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#minute {
+    width: 1.5%;
+    height: 35%;
+    top: 16%;
+    left: 49.04%;
+    opacity: 0.8;
+    /* display: none; */
+}
+
+#second {
+    width: 1%;
+    height: 36%;
+    top: 14%;
+    left: 49.15%;
+    /* display: none; */
+}
